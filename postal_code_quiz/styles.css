@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Quicksand;
+    font-size: 62.5%;
+}
+*:root {
+    --color-primary:rgb(1, 141, 255);
+    --color-secondary: rgb(162, 0, 255);
+    --color-tertiary: rgb(255, 0, 221);
+    --color-quatriary: rgb(255, 6, 6);
+    --color-green: rgb(20, 199, 50);
+    --color-yellow: rgb(199, 211, 29);
+}
+
+body {
+    font-size: 1.6rem;
+
+}
+
+
+
+header {
+    width: 100vw;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+main {
+    background-color: var(--color-primary);
+    border-radius: 3rem;
+    padding: 3rem;
+    max-width: 720px;
+    margin: 15vh auto;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.3);
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.score-box {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-box > * {
+    padding: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.time {
+    background-color: var(--color-secondary);
+}
+
+.state-number {
+    background-color: var(--color-tertiary);
+    padding: 1rem 2.5rem;
+}
+
+.outof {
+    background-color: var(--color-quatriary);
+}
+
+form {
+    display: flex;
+}
+
+input {
+    flex: 3;
+    border-radius: 4px;
+    border: none;
+    padding: 1rem 2rem;
+    margin-right: 3rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.next {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 1s;
+    flex: 1;
+}
+
+.next:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.next:active {
+    transform: translateY(3px);
+}
+.green {
+    background-color: var(--color-green);
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.red {
+    background-color: var(--color-quatriary);
+}
+
+/* Final page */
+
+.correct {
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.correct p {
+    margin: 2rem 0;
+}
+
+.incorrect-states {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.incorrect-states p {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 3rem 2rem;
+    border-bottom: 4px solid #efefef;
+    display: flex;
+    justify-content: space-around;
+}
+
+.state-name {
+    background-color: var(--color-tertiary);
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+.state-answer {
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: var(--color-yellow);
+}
+
+.user-answer {
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset {
+    background-color: var(--color-quatriary);
+    border-radius: 3rem;
+    border: none;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
